@@ -82,8 +82,7 @@
           </li-icon>
           <a
             href="https://www.linkedin.com/in/valerykatskel/"
-            id="ember2519"
-            class="link-without-hover-visited t-14 ember-view"
+            class="link-without-hover-visited t-14"
           >linkedin.com/in/valerykatskel</a>
         </div>
 
@@ -111,8 +110,7 @@
           </li-icon>
           <a
             href="https://github.com/valerykatskel"
-            id="ember2519"
-            class="link-without-hover-visited t-14 ember-view"
+            class="link-without-hover-visited t-14"
           >github.com/valerykatskel</a>
         </div>
       </div>

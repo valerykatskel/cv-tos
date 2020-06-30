@@ -15,7 +15,7 @@
           loading="lazy"
           height="24"
           :alt="getLogoAlt(item.name)"
-          class="flex-shrink-zero mr2 lazy-image ember-view"
+          class="flex-shrink-zero mr2 lazy-image"
         />
         <div class="full-width">
           <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>

@@ -1,7 +1,5 @@
 <template>
-  <li
-    class="cv-project cv-project--with-separator cv-project--first cv-project--expanded ember-view"
-  >
+  <li class="cv-project cv-project--with-separator cv-project--first cv-project--expanded">
     <h4 class="cv-project__title t-14 t-bold">
       <span class="visually-hidden">Project name</span>
       {{ project.name }}
