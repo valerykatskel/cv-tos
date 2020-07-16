@@ -2,9 +2,11 @@
   <div v-if="data.length > 0" class="cv-section">
     <h3 class="t-18 t-black t-bold">Experience</h3>
 
-    <ul class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more">
+    <ul
+      class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
+    >
       <li
-        class="resume-builder__subsection-container"
+        class="cv-section-item"
         v-for="item in data"
         :key="item.id"
         :item="item"
@@ -24,17 +26,23 @@
             <span
               v-show="item.type !== undefined && item.type.trim().length > 0"
               class="pv-entity__secondary-title separator"
-            >{{ item.type }}</span>
+              >{{ item.type }}</span
+            >
           </p>
           <p class="t-14 t-black">
             {{ getDuration(item.start, item.end) }}
             <span
-              v-show="item.location !== undefined && item.location.trim().length > 0"
+              v-show="
+                item.location !== undefined && item.location.trim().length > 0
+              "
               class="pv-entity__secondary-title separator"
-            >{{ item.location }}</span>
+              >{{ item.location }}</span
+            >
           </p>
 
-          <p class="white-space-pre-wrap break-words t-14 t-black item-description">
+          <p
+            class="white-space-pre-wrap break-words t-14 t-black item-description"
+          >
             <span dir="ltr" v-html="item.description" />
           </p>
         </div>

@@ -2,9 +2,11 @@
   <div v-if="data.length > 0" class="cv-section">
     <h3 class="t-18 t-black t-bold">Education</h3>
 
-    <ul class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more">
+    <ul
+      class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
+    >
       <li
-        class="resume-builder__subsection-container"
+        class="cv-section-item"
         v-for="item in data"
         :key="item.id"
         :item="item"
@@ -60,5 +62,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>
