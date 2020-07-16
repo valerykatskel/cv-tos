@@ -8,20 +8,6 @@
 
     <cv-education />
 
-    <!-- CV Licenses & Certifications section start -->
-    <div v-if="certifications.length > 0" class="cv-section">
-      <h3 class="t-18 t-black t-bold">Licenses &amp; certifications</h3>
-
-      <ul>
-        <cv-certification
-          v-for="certification in certifications"
-          :key="certification.id"
-          :certification="certification"
-        />
-      </ul>
-    </div>
-    <!-- CV Licenses & Certifications section end -->
-
     <!-- CV Skills section start -->
     <div v-if="skills.length > 0" class="cv-section skill-section">
       <h3 class="t-18 t-black t-bold">Skills</h3>
@@ -35,11 +21,31 @@
     <div v-if="projects.length > 0" class="cv-section">
       <h3 class="t-18 t-black t-bold">Projects</h3>
 
-      <ul class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more">
-        <cv-project v-for="project in projects" :key="project.id" :project="project" />
+      <ul
+        class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
+      >
+        <cv-project
+          v-for="project in projects"
+          :key="project.id"
+          :project="project"
+        />
       </ul>
     </div>
     <!-- CV Projects section end -->
+
+    <!-- CV Licenses & Certifications section start -->
+    <div v-if="certifications.length > 0" class="cv-section">
+      <h3 class="t-18 t-black t-bold">Licenses &amp; certifications</h3>
+
+      <ul>
+        <cv-certification
+          v-for="certification in certifications"
+          :key="certification.id"
+          :certification="certification"
+        />
+      </ul>
+    </div>
+    <!-- CV Licenses & Certifications section end -->
   </div>
 </template>
 
