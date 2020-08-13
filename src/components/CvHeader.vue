@@ -90,7 +90,7 @@ h2 {
 
   .header-right {
     img {
-      height: 190px;
+      height: 200px;
       vertical-align: bottom;
     }
   }
