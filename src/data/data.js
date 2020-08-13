@@ -25,8 +25,9 @@ export const Contact = [
 ];
 
 export const Achievements = [
-  "<strong>12+ years</strong> experience in IT",
-  "<strong>over 250</strong> custom branding pages created since 2013"
+  "<strong>12+ years</strong> experience in IT and <strong>over 8 years</strong> commercial development in Frontend",
+  "<strong>over 250</strong> custom branding pages created since 2013",
+  "No-Shave November'12 <strong>winner</strong> at Altoros"
 ];
 
 export const Experience = [

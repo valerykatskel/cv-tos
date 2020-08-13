@@ -2,8 +2,9 @@
   <div v-if="data.length > 0" class="cv-section">
     <h3 class="t-18 t-black t-bold">Achievements</h3>
     <div class="header-achievements">
-      <ul class="cv-section-items is-bulleted">
+      <ul class="cv-section-items">
         <li v-for="item in data" :key="item">
+          •&nbsp;&nbsp;
           <span v-html="item"></span>
         </li>
       </ul>

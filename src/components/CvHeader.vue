@@ -12,7 +12,7 @@
       </ul>
     </div>
     <div class="header-right">
-      <img src="@/assets/photo.png" alt />
+      <img src="@/assets/photo.jpg" alt />
     </div>
   </div>
 </template>
