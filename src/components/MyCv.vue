@@ -92,7 +92,7 @@ export default {
 .cv-section {
   position: relative;
   overflow: hidden;
-  padding: 0 15px;
+  padding: 0 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
   &:last-of-type {
@@ -104,7 +104,6 @@ export default {
     margin: 30px 0;
 
     h3 {
-      font-weight: bold;
       font-size: 20px;
       line-height: 1;
       margin-bottom: 15px;
@@ -112,8 +111,10 @@ export default {
 
     .cv-section-list {
       margin-left: 16px;
+
       li {
         font-size: 14px;
+        line-height: 23px;
       }
     }
   }

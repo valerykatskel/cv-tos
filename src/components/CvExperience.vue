@@ -50,6 +50,7 @@
 
 <script>
 import { Experience } from "../data/data";
+import moment from "moment";
 export default {
   name: "CvExperience",
   data() {
@@ -62,7 +63,21 @@ export default {
       return `Logo for ${name}`;
     },
     getDuration(start, end) {
-      return end === "" ? `${start} – Present` : `${start} – ${end}`;
+      const tsStart = Date.parse(start);
+      const tsEnd = end === "" ? Date.now() : Date.parse(end);
+      const duration = Math.ceil(
+        moment.duration((tsEnd - tsStart) / 1000, "seconds").asMonths()
+      );
+      const years = Math.floor(duration / 12);
+      const months = duration % 12;
+      //const duration = tsEnd - tsStart;
+      let durationText = "";
+      durationText +=
+        years === 0 ? "" : `${years} ${years > 1 ? "years" : "year"}`;
+      durationText += months === 0 ? "" : ` and ${months} months`;
+      return end === ""
+        ? `${durationText} (${start} – Present)`
+        : `${durationText} (${start} – ${end})`;
     }
   },
   computed: {},
@@ -86,6 +101,7 @@ export default {
   .description-header {
     font-weight: bold;
     margin-bottom: 5px;
+    font-size: 14px;
     display: inline-block;
   }
 

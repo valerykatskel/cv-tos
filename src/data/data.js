@@ -47,10 +47,10 @@ export const Experience = [
       "TUT.BY group of companies (from 2000 to the present), ≈300 employees, regional offices in all regions of Belarus. Reporting directly to the Chief Engineer, member of the Board of Directors of the company.",
     description: `<p>My responsibilities:</p>
 <ul>
-<li>developing of new sections on the portal;</li>
-<li>updating existing ones;</li>
-<li>refactoring legacy code;</li>
-<li>development of various interactive applications and widgets for embedding into the news page;</li>
+<li>developing of new sections on the portal</li>
+<li>updating existing ones</li>
+<li>refactoring legacy code</li>
+<li>development of various interactive applications and widgets for embedding into the news page</li>
 </ul>
 <p>There is a large number of successfully completed <strong>interactive games and quizzes</strong>, affiliate materials.</p>
 <p>In my work, I use the following technologies: <strong>Less, Html, Pug, Vue.js, JavaScript</strong>.</p>`

@@ -72,7 +72,6 @@ h2 {
   .cv-section-inner {
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
     h2 {
       margin-top: -8px;
     }
@@ -80,10 +79,12 @@ h2 {
       font-weight: normal;
       font-size: 18px;
       margin-bottom: 0;
+      margin-top: 5px;
     }
     h4 {
       font-size: 14px;
       color: gray;
+      margin-top: 5px;
     }
   }
 
