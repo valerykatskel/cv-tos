@@ -1,10 +1,9 @@
 <template>
   <div v-if="data.length > 0" class="cv-section">
-    <h3 class="t-18 t-black t-bold">Achievements</h3>
-    <div class="header-achievements">
-      <ul class="cv-section-items">
+    <div class="cv-section-inner">
+      <h3>Achievements</h3>
+      <ul class="cv-section-list">
         <li v-for="item in data" :key="item">
-          •&nbsp;&nbsp;
           <span v-html="item"></span>
         </li>
       </ul>

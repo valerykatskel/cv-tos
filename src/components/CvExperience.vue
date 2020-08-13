@@ -1,45 +1,50 @@
 <template>
   <div v-if="data.length > 0" class="cv-section">
-    <h3 class="t-18 t-black t-bold">Experience</h3>
+    <div class="cv-section-inner">
+      <h3>Experience</h3>
 
-    <ul
-      class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
-    >
-      <li
-        class="cv-section-item"
-        v-for="item in data"
-        :key="item.id"
-        :item="item"
+      <ul
+        class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
       >
-        <div class="full-width">
-          <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>
-          <p class="t-16 t-black">
-            {{ item.name }}
-            <span
-              v-show="item.type !== undefined && item.type.trim().length > 0"
-              class="pv-entity__secondary-title separator"
-              >{{ item.type }}</span
-            >
-          </p>
-          <p class="t-14 t-black">
-            {{ getDuration(item.start, item.end) }}
-            <span
-              v-show="
-                item.location !== undefined && item.location.trim().length > 0
-              "
-              class="pv-entity__secondary-title separator"
-              >{{ item.location }}</span
-            >
-          </p>
+        <li
+          class="cv-section-item"
+          v-for="item in data"
+          :key="item.id"
+          :item="item"
+        >
+          <div class="full-width">
+            <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>
+            <p class="t-16 t-black">
+              {{ item.name }}
+              <span
+                v-show="item.type !== undefined && item.type.trim().length > 0"
+                class="pv-entity__secondary-title separator"
+                >{{ item.type }}</span
+              >
+            </p>
+            <p class="t-14 t-black">
+              {{ getDuration(item.start, item.end) }}
+              <span
+                v-show="
+                  item.location !== undefined && item.location.trim().length > 0
+                "
+                class="pv-entity__secondary-title separator"
+                >{{ item.location }}</span
+              >
+            </p>
 
-          <p
-            class="white-space-pre-wrap break-words t-14 t-black item-description"
-          >
-            <span dir="ltr" v-html="item.description" />
-          </p>
-        </div>
-      </li>
-    </ul>
+            <div class="break-words t-14 t-black item-description">
+              <p class="description-header">{{ item.descriptionHeader }}</p>
+              <div
+                class="description-content"
+                dir="ltr"
+                v-html="item.description"
+              />
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -70,12 +75,38 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style lang="scss">
 .pv-entity__secondary-title.separator::before {
   content: "\00B7";
   padding: 0 4px 0 0;
 }
 .item-description {
   margin-top: 15px;
+
+  .description-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  .description-content {
+    p {
+      margin-top: 5px;
+      font-size: 14px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    ul {
+      list-style-type: disc;
+      margin-left: 16px;
+      margin-top: 5px;
+      li {
+        font-size: 14px;
+      }
+    }
+  }
 }
 </style>

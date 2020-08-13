@@ -1,18 +1,35 @@
 <template>
   <div class="cv-section cv-header">
-    <div class="header-left">
-      <h2>{{ data.name }}</h2>
-      <h3>{{ data.position }}</h3>
-      <p>{{ age }}, {{ data.location }}</p>
+    <div class="cv-section-inner">
+      <div class="header-left">
+        <h2>{{ data.name }}</h2>
+        <h3>{{ data.position }}</h3>
+        <h4>{{ age }}, {{ data.location }}</h4>
 
-      <ul class="cv-contact-info">
-        <li>E-mail: ne.vse.srazu@gmail.com</li>
-        <li>Skype: bestnickname</li>
-        <li>Phone/WhatsApp/Telegram/Viber: +375 29 768 86 32</li>
-      </ul>
-    </div>
-    <div class="header-right">
-      <img src="@/assets/cv-photo.jpg" alt />
+        <ul class="cv-contact-info">
+          <li><span class="name">E-mail:</span>ne.vse.srazu@gmail.com</li>
+          <li><span class="name">Skype:</span>bestnickname</li>
+          <li>
+            <span class="name">Phone/WhatsApp/Telegram/Viber:</span>+375 29 768
+            86 32
+          </li>
+          <li>
+            <span class="name">Linkedin:</span>
+            <a href="https://www.linkedin.com/in/valerykatskel/"
+              >linkedin.com/in/valerykatskel</a
+            >
+          </li>
+          <li>
+            <span class="name">GitHub:</span>
+            <a href="https://github.com/valerykatskel"
+              >github.com/valerykatskel</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="header-right">
+        <img src="@/assets/photo.jpg" alt />
+      </div>
     </div>
   </div>
 </template>
@@ -52,30 +69,43 @@ h2 {
   line-height: 1.25;
 }
 .cv-header {
-  display: flex;
-  justify-content: space-between;
-
-  .header-right {
+  .cv-section-inner {
+    display: flex;
+    justify-content: space-between;
     margin-top: 15px;
-    margin-bottom: 15px;
-
-    img {
-      height: 165px;
-      vertical-align: bottom;
+    h2 {
+      margin-top: -8px;
+    }
+    h3 {
+      font-weight: normal;
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+    h4 {
+      font-size: 14px;
+      color: gray;
     }
   }
 
-  .header-left {
-    h2 {
-      margin-top: 5px;
+  .header-right {
+    img {
+      height: 190px;
+      vertical-align: bottom;
     }
   }
 }
 .cv-contact-info {
-  margin: 16px 0 16px 16px;
+  margin: 16px 0 0;
   padding: 0;
+  list-style-type: none;
+
   li {
     font-size: 14px;
+
+    .name {
+      display: inline-block;
+      width: 280px;
+    }
   }
 }
 </style>

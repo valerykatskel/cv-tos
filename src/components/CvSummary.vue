@@ -1,9 +1,12 @@
 <template>
   <div class="cv-section">
-    <h3 class="t-18 t-black t-bold">Summary</h3>
-    <p class="mt2 mb4 white-space-pre-wrap break-words t-14 t-black">
-      <span dir="ltr" v-html="data.text" />
-    </p>
+    <div class="cv-section-inner">
+      <h3>Summary</h3>
+
+      <p class="mt2 mb4 white-space-pre-wrap break-words t-14 t-black">
+        <span dir="ltr" v-html="data.text" />
+      </p>
+    </div>
   </div>
 </template>
 
@@ -26,5 +29,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
-</style>
+<style scoped lang="scss"></style>

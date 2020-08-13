@@ -41,12 +41,7 @@ a {
 a {
   font-weight: 600;
 }
-body {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell,
-    Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
-    Lucida Grande, Helvetica, Arial, sans-serif;
-}
+
 a {
   background-color: transparent;
   border: 0;
@@ -291,6 +286,9 @@ a[href] {
   padding-bottom: 16px;
   margin-top: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.cv-section-item:last-child {
+  padding-bottom: 0;
 }
 
 .cv-section-items {

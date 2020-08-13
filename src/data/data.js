@@ -26,8 +26,10 @@ export const Contact = [
 
 export const Achievements = [
   "<strong>12+ years</strong> experience in IT and <strong>over 8 years</strong> commercial development in Frontend",
-  "<strong>over 250</strong> custom branding pages created since 2013",
-  "No-Shave November'12 <strong>winner</strong> at Altoros"
+  "<strong>over 250</strong> custom branding pages created since 2013 at TUT.BY",
+  "implementation of a new type of advertising banner made it possible to increase the influx of new advertisers to the TUT.BY by <strong>15% in 3 months</strong>",
+  "experience in developing high-load applications with a peak load of more than <strong>3000 requests per minute</strong>",
+  "work for the <strong>last 6.5 years</strong> on the largest web portal of the Republic of Belarus with <strong>more than 20,000,000</strong> unique visitors per month"
 ];
 
 export const Experience = [
@@ -41,15 +43,17 @@ export const Experience = [
     start: "Dec 2013",
     end: "",
     type: "Full-time",
-    description: `Working on the web portal TUT.BY, I participate in a large number of interesting projects.
-My job responsibilities include: 
-&bull;  developing of new sections on the portal;
-&bull;  updating existing ones;
-&bull;  refactoring legacy code;
-&bull;  development of various interactive applications and widgets for embedding into the news page;
-There is a large number of successfully completed interactive games and quizzes, affiliate materials.
-In my work, I use the following technologies: Less, Html, Pug, Vue.js, JavaScript.
-Every day I use tools like Figma and Visual Studio Code, Ubuntu to do my job.`
+    descriptionHeader:
+      "TUT.BY group of companies (from 2000 to the present), ≈300 employees, regional offices in all regions of Belarus. Reporting directly to the Chief Engineer, member of the Board of Directors of the company.",
+    description: `<p>My responsibilities:</p>
+<ul>
+<li>developing of new sections on the portal;</li>
+<li>updating existing ones;</li>
+<li>refactoring legacy code;</li>
+<li>development of various interactive applications and widgets for embedding into the news page;</li>
+</ul>
+<p>There is a large number of successfully completed <strong>interactive games and quizzes</strong>, affiliate materials.</p>
+<p>In my work, I use the following technologies: <strong>Less, Html, Pug, Vue.js, JavaScript</strong>.</p>`
   },
   {
     id: 2,
@@ -61,9 +65,11 @@ Every day I use tools like Figma and Visual Studio Code, Ubuntu to do my job.`
     start: "Feb 2012",
     end: "Nov 2013",
     type: "Full-time",
-    description: `For a short period of work in the company, I took part as a Frontend developer in 5 projects.
-These were projects for customers from various countries, such as Norway, the USA. These were very versatile projects: from a web application for determining possible breast cancer in women, to a social network for people with creative professions (musicians, artists, singers) and service for booking the appointment time with a veterinarian.
-The technologies I had Used: CoffeeScript, JavaScript, Haml, Sass, Scss, Backbone.js, Apache Cordova`
+    descriptionHeader:
+      "Altoros is a leading IT services provider that helped 50+ Global 2000 organizations, ≈350 employees, 5 global offices, reported to Front-end Resource Manager",
+    description: `<p>For a short period of work in the company, I took part as a Frontend developer in <strong>5 projects</strong>.</p>
+<p>These were projects for customers from various countries, such as <strong>Norway and USA</strong>. These were very versatile projects: from a web application for determining possible breast cancer for women, to a social network for people with creative professions (musicians, artists, singers) and service for booking the appointment time with a veterinarian.</p>
+<p>The technologies I had Used: <strong>CoffeeScript, JavaScript, Haml, Sass, Scss, Backbone.js, Apache Cordova</strong><p>`
   },
   {
     id: 3,
@@ -75,8 +81,10 @@ The technologies I had Used: CoffeeScript, JavaScript, Haml, Sass, Scss, Backbon
     start: "Aug 2008",
     end: "Jan 2012",
     type: "Full-time",
-    description: `I was developing new functions and was supporting the work of the software package for the Main Department of Insurance Supervision of the Ministry of Finance. I was also involved in the development of the ivcmf.by website, supporting its operability. 
-Technologies: Delphi, MSSQL, HTML, CSS, PHP`
+    descriptionHeader:
+      'The unitary enterprise "Information and Computing Center of the Ministry of Finance" has been providing services for automation, development and maintenance of software systems for more than 46 years',
+    description: `<p>I was developing new functions and was supporting the work of the software package for the <strong>Main Department of Insurance Supervision of the Ministry of Finance</strong>. I was also involved in the development of the ivcmf.by website and supported its operability. 
+Technologies: <strong>Delphi, MSSQL, HTML, CSS, PHP</strong></p>`
   }
 ];
 

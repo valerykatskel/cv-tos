@@ -1,26 +1,32 @@
 <template>
   <div v-if="data.length > 0" class="cv-section">
-    <h3 class="t-18 t-black t-bold">Education</h3>
+    <div class="cv-section-inner">
+      <h3>Education</h3>
 
-    <ul
-      class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
-    >
-      <li
-        class="cv-section-item"
-        v-for="item in data"
-        :key="item.id"
-        :item="item"
+      <ul
+        class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
       >
-        <div class="full-width">
-          <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>
-          <p class="t-16 t-black">{{ item.name }}</p>
-          <p class="t-14 t-black">{{ getDuration(item.start, item.end) }}</p>
-          <p class="white-space-pre-wrap break-words t-14 t-black">
-            <span dir="ltr" v-html="item.description" />
-          </p>
-        </div>
-      </li>
-    </ul>
+        <li
+          class="cv-section-item"
+          v-for="item in data"
+          :key="item.id"
+          :item="item"
+        >
+          <div class="full-width">
+            <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>
+            <p class="t-16 t-black">{{ item.name }}</p>
+            <p class="t-14 t-black">{{ getDuration(item.start, item.end) }}</p>
+            <div class="break-words t-14 t-black item-description">
+              <div
+                dir="ltr"
+                class="description-content"
+                v-html="item.description"
+              ></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
