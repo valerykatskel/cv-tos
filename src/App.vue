@@ -41,10 +41,10 @@ p {
   font-size: 1.6rem;
   line-height: 1.5;
 }
-.cv-section {
-  position: relative;
-  padding: 0 48px;
-  margin-bottom: 24px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+#app {
+  width: 21cm;
+  height: 29.7cm;
+  margin: 0 auto;
 }
 </style>

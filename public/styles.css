@@ -292,6 +292,17 @@ a[href] {
   margin-top: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
+.cv-section-items.is-bulleted {
+  list-style-type: disc;
+  margin-left: 16px;
+}
+.cv-section-items.is-bulleted li {
+  display: list-item;
+}
+.cv-section-items {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
 .cv-section-item img {
   margin-top: 6px;
 }

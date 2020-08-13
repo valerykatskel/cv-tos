@@ -1,8 +1,7 @@
 <template>
   <div class="core-rail container-with-shadow p0" role="main">
     <cv-header />
-
-    <cv-summary />
+    <cv-achievements />
 
     <cv-experience />
 
@@ -52,19 +51,21 @@
 <script>
 import { Projects, Skills, Certifications } from "../data/data";
 import CvHeader from "./CvHeader";
-import CvSummary from "./CvSummary";
+import CvAchievements from "./CvAchievements";
 import CvProject from "./CvProject";
 import CvSkill from "./CvSkill";
 import CvExperience from "./CvExperience";
+import CvEducation from "./CvEducation";
 import CvCertification from "./CvCertification";
 export default {
   name: "MyCv",
   components: {
     CvHeader,
-    CvSummary,
+    CvAchievements,
     CvProject,
     CvSkill,
     CvExperience,
+    CvEducation,
     CvCertification
   },
   data() {
@@ -89,8 +90,8 @@ export default {
 <style scoped lang="scss">
 .cv-section {
   position: relative;
-  padding: 0 48px;
-  margin-bottom: 24px;
+  padding: 0 15px;
+  margin-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 
   &:last-of-type {

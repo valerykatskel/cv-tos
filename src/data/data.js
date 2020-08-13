@@ -1,27 +1,14 @@
 export const Header = {
   name: "Valery Katskel",
   location: "Minsk (Belarus)",
-  position: "Frontend Engineer, JavaScript Developer",
+  position: "Frontend Engineer, Senior JavaScript Developer",
   sex: "Male",
   yob: 1983,
   degree: "B.A."
 };
 
 export const Summary = {
-  text: `const skills = () =&gt; { 
-        javaScript: ['es5', 'es6'], 
-        html: ['html', 'html5'], 
-        templateEngines: ['haml', 'slim','pug'], 
-        css: ['css', 'css3'], 
-        cssPreprocessors: ['sass', 'scss', 'less'], 
-        cssFrameworks: ['foundation', 'animate.css'], 
-        frameforksAndLibraries: ['vue.js', 'react', 'jQuery'], 
-        jsUnitTesting: ['jasmine'], 
-        buildProjects: ['gulp', 'webpack', 'grunt'], 
-        other: ['bootstrap', 'bitbucket', 'github', 'sublimeTextEditor', 'atom', 'visual studio code', 'photoshop', 'stackoverflow.com', 'yeoman.io'], 
-    } 
-
-/* I worked as a Senior and Middle Front-end Engineer on scalable international projects. I have experience writing applications on Vue.js using various related technologies, such as Vuex, Vuetify and etc. While working at Altoros, I had experience conducting interviews for   candidates for the position of Front-end developer.*/`
+  text: `I worked as a Front-end Engineer on scalable international projects. I have experience writing applications on Vue.js using various related technologies, such as Vuex, Vuetify, Nuxt and etc. `
 };
 
 export const Contact = [
@@ -37,6 +24,11 @@ export const Contact = [
   }
 ];
 
+export const Achievements = [
+  "<strong>12+ years</strong> experience in IT",
+  "<strong>over 250</strong> custom branding pages created since 2013"
+];
+
 export const Experience = [
   {
     id: 1,
@@ -50,9 +42,10 @@ export const Experience = [
     type: "Full-time",
     description: `Working on the web portal TUT.BY, I participate in a large number of interesting projects.
 My job responsibilities include: 
-  - developing of new sections on the portal
-  - updating existing ones
-  - refactoring legacy code
+&bull;  developing of new sections on the portal;
+&bull;  updating existing ones;
+&bull;  refactoring legacy code;
+&bull;  development of various interactive applications and widgets for embedding into the news page;
 There is a large number of successfully completed interactive games and quizzes, affiliate materials.
 In my work, I use the following technologies: Less, Html, Pug, Vue.js, JavaScript.
 Every day I use tools like Figma and Visual Studio Code, Ubuntu to do my job.`
@@ -93,8 +86,8 @@ export const Education = [
     logo:
       "https://media-exp1.licdn.com/dms/image/C560BAQEH3nVQAcDzBA/company-logo_100_100/0?e=1601510400&v=beta&t=Il9L8n5Q58vww1rNj6K-4t4mP0zh85Pwb2TfzBrR9lc",
     position: "Bachelor of information technology",
-    start: "Dec 2013",
-    end: "",
+    start: "2003",
+    end: "2008",
     description: `Passed the state exam in the specialty with an assessment of SEVEN and defended a graduation project for 9 points out of 10.`
   }
 ];

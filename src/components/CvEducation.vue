@@ -11,18 +11,10 @@
         :key="item.id"
         :item="item"
       >
-        <img
-          width="24"
-          :src="item.logo"
-          loading="lazy"
-          height="24"
-          :alt="getLogoAlt(item.name)"
-          class="flex-shrink-zero mr2 lazy-image"
-        />
         <div class="full-width">
           <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>
           <p class="t-16 t-black">{{ item.name }}</p>
-          <p class="t-14 t-black">{{ duration }}</p>
+          <p class="t-14 t-black">{{ getDuration(item.start, item.end) }}</p>
           <p class="white-space-pre-wrap break-words t-14 t-black">
             <span dir="ltr" v-html="item.description" />
           </p>
@@ -33,7 +25,7 @@
 </template>
 
 <script>
-import { Experience } from "../data/data";
+import { Education } from "../data/data";
 export default {
   name: "CvEducation",
   data() {
@@ -42,20 +34,21 @@ export default {
     };
   },
   methods: {
-    getLogoAlt(name) {
-      return `Logo for ${name}`;
+    getDuration(start, end) {
+      return end === "" ? `${start} – Present` : `${start} – ${end}`;
     }
   },
   computed: {
     duration() {
-      return this.data.end === ""
-        ? `${this.data.start} – Present`
-        : `${this.data.start} – ${this.data.end}`;
+      return this.data;
+      // return this.data.end === ""
+      //   ? `${this.data.start} – Present`
+      //   : `${this.data.start} – ${this.data.end}`;
     }
   },
   mounted() {
     this.$nextTick(() => {
-      this.data = Experience;
+      this.data = Education;
     });
   }
 };
