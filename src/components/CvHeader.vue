@@ -7,22 +7,13 @@
         <h4>{{ age }}, {{ data.location }}</h4>
 
         <ul class="cv-contact-info">
-          <li><span class="name">E-mail:</span>ne.vse.srazu@gmail.com</li>
-          <li><span class="name">Skype:</span>bestnickname</li>
-          <li>
-            <span class="name">Phone/WhatsApp/Telegram/Viber:</span>+375 29 768
-            86 32
-          </li>
+          <li><span class="name">E-mail:</span>antonina.katskel@gmail.com</li>
+          <li><span class="name">Skype:</span>antonina.katskel</li>
+          <li><span class="name">Phone/Telegram/Viber:</span>+375292790069</li>
           <li>
             <span class="name">Linkedin:</span>
-            <a href="https://www.linkedin.com/in/valerykatskel/"
-              >linkedin.com/in/valerykatskel</a
-            >
-          </li>
-          <li>
-            <span class="name">GitHub:</span>
-            <a href="https://github.com/valerykatskel"
-              >github.com/valerykatskel</a
+            <a href="https://www.linkedin.com/in/antoninakatskel/"
+              >linkedin.com/in/antoninakatskel</a
             >
           </li>
         </ul>
@@ -36,6 +27,8 @@
 
 <script>
 import { Header } from "../data/data";
+import moment from "moment";
+
 export default {
   name: "CvHeader",
 
@@ -46,7 +39,13 @@ export default {
   },
   computed: {
     age() {
-      return `${new Date().getFullYear() - this.data.yob} years old`;
+      const tsStart = Date.parse(this.data.yob);
+      const tsEnd = Date.now();
+      const duration = Math.ceil(
+        moment.duration((tsEnd - tsStart) / 1000, "seconds").years()
+      );
+
+      return `${duration} years old`;
     }
   },
   mounted() {
@@ -90,7 +89,7 @@ h2 {
 
   .header-right {
     img {
-      height: 200px;
+      height: 179px;
       vertical-align: bottom;
     }
   }

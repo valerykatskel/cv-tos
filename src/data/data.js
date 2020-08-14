@@ -1,9 +1,9 @@
 export const Header = {
-  name: "Valery Katskel",
+  name: "Antonina Katskel",
   location: "Minsk (Belarus)",
-  position: "Frontend Engineer, Senior JavaScript Developer",
-  sex: "Male",
-  yob: 1983,
+  position: "Lead UI/UX Designer",
+  sex: "Female",
+  yob: "Nov 21, 1986",
   degree: "B.A."
 };
 
@@ -25,79 +25,102 @@ export const Contact = [
 ];
 
 export const Achievements = [
-  "<strong>12+ years</strong> experience in IT and <strong>over 8 years</strong> commercial development in Frontend",
-  "<strong>over 250</strong> custom branding pages created since 2013 at TUT.BY",
-  "implementation of a new type of advertising banner made it possible to increase the influx of new advertisers to the TUT.BY by <strong>15% in 3 months</strong>",
-  "experience in developing high-load applications with a peak load of more than <strong>3000 requests per minute</strong>",
-  "work for the <strong>last 6.5 years</strong> on the largest web portal of the Republic of Belarus with <strong>more than 20,000,000</strong> unique visitors per month"
+  "<strong>12+ years</strong> experience in IT",
+  "developed a <strong>prototype</strong> for network virtualization special for <strong>the largest mobile operator in the UAE</strong> - Etisalat",
+  "systematized UI elements <strong>into design system</strong>, which increased the time for design development <strong>up to 35%</strong>",
+  "in 2013 I became <strong>the best employee</strong> of the Frontend development department at Altoros"
 ];
 
 export const Experience = [
   {
     id: 1,
-    name: "TUT.BY",
+    name: "Altoros",
     location: "Minsk, Belarus",
-    logo:
-      "https://media-exp1.licdn.com/dms/image/C4D0BAQFRhfUuQbh15Q/company-logo_100_100/0?e=1601510400&v=beta&t=WSDqWK8GhvyLdjr4FJ4FTJFDhWSuhkDwynDVj-rnJeM",
-    position: "Front-end Engineer",
-    start: "Dec 2013",
+    position: "Lead UI/UX Designer, DesignOps",
+    start: "Sep 2019",
     end: "",
     type: "Full-time",
     descriptionHeader:
-      "TUT.BY group of companies (from 2000 to the present), ≈300 employees, regional offices in all regions of Belarus. Reporting directly to the Chief Engineer, member of the Board of Directors of the company.",
-    description: `<p>My responsibilities:</p>
-<ul>
-<li>developing of new sections on the portal</li>
-<li>updating existing ones</li>
-<li>refactoring legacy code</li>
-<li>development of various interactive applications and widgets for embedding into the news page</li>
-</ul>
-<p>There is a large number of successfully completed <strong>interactive games and quizzes</strong>, affiliate materials.</p>
-<p>In my work, I use the following technologies: <strong>Less, Html, Pug, Vue.js, JavaScript</strong>.</p>`
+      "Altoros is a leading IT services provider that helped 50+ Global 2000 organizations, ≈350 employees, 5 global offices, reported to Front-end Resource Manager",
+    description: `<ul>
+<li>provide leadership, direction and mentorship for a team of <strong>6 UX/UI Designers</strong></li>
+<li><strong>daily</strong> scope, prioritize, and plan project work for a team of UX/UI Designers</li>
+<li>create, organize, and share project style guides, design systems, pattern libraries, and asset repositories</li>
+<li>participate in user research using industry accepted methodologies and documentation including: user personas, user journeys, scenarios, card sorting, interviews, competitive audits and market research</li>
+<li>create information architecture, low fidelity wireframes, and clickable prototypes that realize the vision from product and user research gathered</li>
+<li>accept feedback on wireframes/prototypes to help <strong>over 20 customers</strong> evolve their projects</li>
+<li>hire, mentor, and manage designers</li>
+</ul>`
   },
   {
     id: 2,
-    name: "Altoros",
+    name: "UX Mind School",
     location: "Minsk, Belarus",
-    logo:
-      "https://media-exp1.licdn.com/dms/image/C4D0BAQHQNeZiFO0GQg/company-logo_100_100/0?e=1601510400&v=beta&t=sfggxMqdOMjQW25vfaR53G3qFwVB0KIj3ey99YZzyUw",
-    position: "Front-end Engineer",
-    start: "Feb 2012",
-    end: "Nov 2013",
-    type: "Full-time",
+    position: "UI/UX Design Coach",
+    start: "Sep 2019",
+    end: "Jun 2020",
+    type: "Part-time",
     descriptionHeader:
-      "Altoros is a leading IT services provider that helped 50+ Global 2000 organizations, ≈350 employees, 5 global offices, reported to Front-end Resource Manager",
-    description: `<p>For a short period of work in the company, I took part as a Frontend developer in <strong>5 projects</strong>.</p>
-<p>These were projects for customers from various countries, such as <strong>Norway and USA</strong>. These were very versatile projects: from a web application for determining possible breast cancer for women, to a social network for people with creative professions (musicians, artists, singers) and service for booking the appointment time with a veterinarian.</p>
-<p>The technologies I had Used: <strong>CoffeeScript, JavaScript, Haml, Sass, Scss, Backbone.js, Apache Cordova</strong><p>`
+      "A team of designers specializing in interface design, UX/UI website design and mobile applications design, ≈7 employees",
+    description: `<p>Responsibilities:</p>
+<ul>
+<li>preparation and implementation web based lesson plans that lead to student comprehension of curriculum concepts</li>
+<li>leading classroom instruction in real time, online</li>
+<li>aid the school in keeping current with design and technology trends</li>
+<li><strong>last year</strong> I have successfully graduated <strong>2 groups</strong> of UI/UX designers</li>
+<li>assessing student progress and maintaining accurate student records</li>
+<li><strong>more than 20</strong> former students have become successful specialists after my lessons finished</li>
+<li>communicating with students, web department, and colleagues in a professional manner</li>
+</ul>`
   },
   {
     id: 3,
-    name:
-      "Information Centre of the Ministry of Finance of the Republic of Belarus",
-    logo: "https://www.ivcmf.by/assets/templates/ivc/images/logo.jpg",
-    position: "Software Engineer",
+    name: "Netcracker Technology",
+    position: "Sr. Product UI/UX Designer, NFV Orchestration",
     location: "Minsk, Belarus",
-    start: "Aug 2008",
-    end: "Jan 2012",
+    start: "Apr 2019",
+    end: "Sep 2019",
     type: "Full-time",
     descriptionHeader:
-      'The unitary enterprise "Information and Computing Center of the Ministry of Finance" has been providing services for automation, development and maintenance of software systems for more than 46 years',
-    description: `<p>I was developing new functions and was supporting the work of the software package for the <strong>Main Department of Insurance Supervision of the Ministry of Finance</strong>. I was also involved in the development of the ivcmf.by website and supported its operability. 
-Technologies: <strong>Delphi, MSSQL, HTML, CSS, PHP</strong></p>`
+      "Netcracker deliver consulting, professional and managed services and the leading end-to-end software products for communication and cable service providers.",
+    description: `<p>Key Responsibilities:</p>
+<ul>
+<li>research, analyze, and share insights around users’ motivations, goals, and behaviors</li>
+<li>creating a design system for engineering products with WCAG requirements</li>
+<li>designing user interaction and virtual network management interface (MANO)</li>
+<li>initiating new product development strategies</li>
+<li>overseeing the user experience of a product from conception through to launch and beyond</li>
+<li>presenting prototypes to higher-ups</li>
+<li>tasks analysing and estimating</li>
+<li>project support (pre-release, release activity and support)</li>
+</ul>`
+  },
+  {
+    id: 4,
+    name: "Altoros",
+    position: "UI/UX Designer",
+    location: "Minsk, Belarus",
+    start: "Dec 2010",
+    end: "Apr 2019",
+    type: "Full-time",
+    descriptionHeader:
+      "Altoros integrates software assembly lines into large organizations by deploying solutions offered by the methodology, custom training, technology building blocks, and deep industry knowledge for cloud automation, microservices, blockchain, and artificial intelligence (AI).",
+    description: `<p>Key Responsibilities:</p>
+<ul>
+<li>Design digital products overseeing the entire process from concepts through wireframes and prototypes to visual design</li>
+<li>Wide variety of assets for print media creating for marketing department</li>
+</ul>`
   }
 ];
 
 export const Education = [
   {
     id: 1,
-    name: "Polotsk State University",
-    logo:
-      "https://media-exp1.licdn.com/dms/image/C560BAQEH3nVQAcDzBA/company-logo_100_100/0?e=1601510400&v=beta&t=Il9L8n5Q58vww1rNj6K-4t4mP0zh85Pwb2TfzBrR9lc",
-    position: "Bachelor of information technology",
-    start: "2003",
-    end: "2008",
-    description: `Passed the state exam in the specialty with an assessment of SEVEN and defended a graduation project for 9 points out of 10.`
+    name: "Belarusian National Technical University",
+    position: "Engineer's degree, Industrial and Product Design",
+    start: "2008",
+    end: "2016",
+    description: ""
   }
 ];
 export const Skills = [

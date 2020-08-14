@@ -16,7 +16,10 @@
             <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>
             <p class="t-16 t-black">{{ item.name }}</p>
             <p class="t-14 t-black">{{ getDuration(item.start, item.end) }}</p>
-            <div class="break-words t-14 t-black item-description">
+            <div
+              v-if="item.description"
+              class="break-words t-14 t-black item-description"
+            >
               <div
                 dir="ltr"
                 class="description-content"
