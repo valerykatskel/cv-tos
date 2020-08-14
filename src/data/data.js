@@ -25,10 +25,12 @@ export const Contact = [
 ];
 
 export const Achievements = [
-  "<strong>12+ years</strong> experience in IT",
-  "developed a <strong>prototype</strong> for network virtualization special for <strong>the largest mobile operator in the UAE</strong> - Etisalat",
-  "systematized UI elements <strong>into design system</strong>, which increased the time for design development <strong>up to 35%</strong>",
-  "in 2013 I became <strong>the best employee</strong> of the Frontend development department at Altoros"
+  "<strong>12+ years</strong> experience in IT, 5 of which in <strong>product design</strong>",
+  "developed a product for network virtualization special for <strong>the largest mobile operator in the UAE &ndash; Etisalat</strong>",
+  "<strong>5 design systems</strong> was created using Figma and Sketch and implemented into product teams",
+  "developed a system for tracking the physical activity of <strong>Econor's (ex. Statoil)</strong> employees, it has increased productivity by an <strong>average of 15%</strong>.",
+  'in 2013, according to the results of the <strong>voting of colleagues</strong>, I was winning the award <strong>"Most helpful employee of Altoros"</strong>',
+  "since 2019 I lead the <strong>team of 4 UX/UI designers</strong>"
 ];
 
 export const Experience = [
@@ -43,7 +45,7 @@ export const Experience = [
     descriptionHeader:
       "Altoros is a leading IT services provider that helped 50+ Global 2000 organizations, ≈350 employees, 5 global offices, reported to Front-end Resource Manager",
     description: `<ul>
-<li>provide leadership, direction and mentorship for a team of <strong>6 UX/UI Designers</strong></li>
+<li>provide leadership, direction and mentorship for a team of <strong>4 UX/UI designers</strong></li>
 <li><strong>daily</strong> scope, prioritize, and plan project work for a team of UX/UI Designers</li>
 <li>create, organize, and share project style guides, design systems, pattern libraries, and asset repositories</li>
 <li>participate in user research using industry accepted methodologies and documentation including: user personas, user journeys, scenarios, card sorting, interviews, competitive audits and market research</li>
