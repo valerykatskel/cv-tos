@@ -6,12 +6,7 @@
       <ul
         class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
       >
-        <li
-          class="cv-section-item"
-          v-for="item in data"
-          :key="item.id"
-          :item="item"
-        >
+        <li class="cv-section-item" v-for="item in data" :key="item.id">
           <div class="full-width">
             <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>
             <p class="t-16 t-black">{{ item.name }}</p>

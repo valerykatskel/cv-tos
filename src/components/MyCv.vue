@@ -101,12 +101,12 @@ export default {
   }
 
   .cv-section-inner {
-    margin: 30px 0;
+    margin: 25px 0;
 
     h3 {
       font-size: 20px;
       line-height: 1;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .cv-section-list {

@@ -6,15 +6,10 @@
       <ul
         class="pv-accomplishments-block__list pv-accomplishments-block__list--has-more"
       >
-        <li
-          class="cv-section-item"
-          v-for="item in data"
-          :key="item.id"
-          :item="item"
-        >
+        <li class="cv-section-item" v-for="item in data" :key="item.id">
           <div class="full-width">
             <h4 class="t-16 t-black t-bold">{{ item.position }}</h4>
-            <p class="t-16 t-black">
+            <p class="t-16 t-black subheader">
               {{ item.name }}
               <span
                 v-show="item.type !== undefined && item.type.trim().length > 0"
@@ -101,6 +96,10 @@ export default {
   content: "\00B7";
   padding: 0 4px 0 0;
 }
+.subheader {
+  line-height: 1;
+  margin-top: 5px;
+}
 .item-description {
   margin-top: 15px;
 
@@ -127,6 +126,7 @@ export default {
       margin-top: 5px;
       li {
         font-size: 14px;
+        line-height: 1.3;
       }
     }
   }

@@ -75,11 +75,7 @@ p {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.9);
 }
-body,
-p {
-  font-size: 1.6rem;
-  line-height: 1.5;
-}
+
 h2 {
   font-size: 3.2rem;
   line-height: 1.25;
@@ -284,7 +280,7 @@ a[href] {
   display: flex;
   align-items: flex-start;
   padding-bottom: 16px;
-  margin-top: 16px;
+  margin-top: 12px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 .cv-section-item:last-child {
@@ -315,4 +311,7 @@ a[href] {
   opacity: 0.6;
 }
 @media print {
+  .container-with-shadow {
+    box-shadow: none;
+  }
 }

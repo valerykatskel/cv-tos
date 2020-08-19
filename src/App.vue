@@ -36,7 +36,7 @@ p {
 body,
 p {
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 #app {

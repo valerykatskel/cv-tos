@@ -126,15 +126,19 @@ export const Education = [
   }
 ];
 export const Skills = [
-  "HTML/HTML5",
-  "CSS/CSS3 (Passed LinkedIn Assessments)",
-  "JavaScript (Passed LinkedIn Assessments)",
-  "Vue.js",
-  "React.js (Passed LinkedIn Assessments)",
-  "Front-end Development",
-  "CSS Animation",
-  "Node.js",
-  "REST"
+  "User Experience (UX)",
+  "User Interface Design (UI)",
+  "Usability Testing",
+  "User Research",
+  "Design Systems",
+  "iOS Human Interface Guidelines",
+  "Material Design Guidelines",
+  "Web Content Accessibility Guidelines (WCAG)",
+  "Team Leadership",
+  "DesignOps",
+  "Agile Methodologies",
+  "Mentoring",
+  "Adobe Suite, Sketch, Figma"
 ];
 
 export const Certifications = [
